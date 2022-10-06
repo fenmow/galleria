@@ -1,0 +1,15 @@
+@mixin center($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin size($porcentagem, $px) {
+  padding: 5px calc(($porcentagem - $px)/2);
+}
+
+@mixin img($position, $size) {
+  background-position: $position;
+  background-size: $size;
+  background-repeat: no-repeat;
+}
